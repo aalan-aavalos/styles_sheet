@@ -1,11 +1,13 @@
-# Expo
-snack.expo.dev
+# Recursos y documentación
 
-# Documentacion de React
-es.react.dev
+## Expo
+- [Expo Snack](https://snack.expo.dev/) — Editor en línea para crear y probar aplicaciones con React Native.
 
-# Documentacion de React Native
-reactnative.dev
+## React
+- [Documentación oficial de React](https://es.react.dev/) — Conceptos fundamentales, componentes, props y hooks.
 
-# Documentacion de JavaScript
-developer.mozilla.org/es/docs/Web/JavaScript/Reference
+## React Native
+- [Documentación oficial de React Native](https://reactnative.dev/) — Guía para desarrollar aplicaciones móviles nativas con React.
+
+## JavaScript
+- [Documentación de JavaScript en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference) — Referencia del lenguaje, sintaxis, objetos y métodos.
