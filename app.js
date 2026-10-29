@@ -9,21 +9,32 @@ export default function App() {
   const [tareas, setTareas] = useState([]);
 
   const agregar = () => {
-    if(!titulo.trim()) return
+    if (!titulo.trim()) return;
 
-    setTareas([...tareas, {id: Date.now(), titulo: titulo}])    
-  }
+    setTareas([...tareas, { id: Date.now(), titulo: titulo }]);
 
+    setTitulo('');
+  };
 
   return (
     <View>
       <Text>Lista de Tareas</Text>
 
       <View>
-        <TextInput placeholder="Ingresa la tarea..." value={titulo} />
+        <TextInput
+          placeholder="Ingresa la tarea..."
+          value={titulo}
+          onChangeText={setTitulo}
+        />
 
-        <ActionButton titulo="Agregar" />
+        <ActionButton titulo="Agregar" onPres={agregar} />
       </View>
+
+      {tareas.map((tarea) => (
+        <View id={tarea.id}>
+          <Text>{tarea.titulo}</Text>
+        </View>
+      ))}
     </View>
   );
 }
